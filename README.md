@@ -1,6 +1,12 @@
 # gluetun-qbittorrent Port Manager
 Automatically updates the listening port for qbittorrent to the port forwarded by [Gluetun](https://github.com/qdm12/gluetun/).
 
+This project is a fork of [SnoringDragon's gluetun-qbittorrent-port-manager](https://github.com/SnoringDragon/gluetun-qbittorrent-port-manager), and adds:
+
+* An optional timeout to inotifywait in order to periodically check for changes to the forwarded_port file.
+* Only update the port if it has changed.
+* Build script to create the docker image without Makefile.
+
 ## Description
 [Gluetun](https://github.com/qdm12/gluetun/) has the ability to forward ports for supported VPN providers, 
 but qbittorrent does not have the ability to update its listening port dynamically.
