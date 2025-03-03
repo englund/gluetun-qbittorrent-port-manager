@@ -1,4 +1,4 @@
-NAME = snoringdragon/luetun-qbittorrent-port-manager
+NAME = englund/gluetun-qbittorrent-port-manager
 VERSION = `cat version`
 
 build: Dockerfile start.sh
